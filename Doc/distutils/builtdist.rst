@@ -373,7 +373,7 @@ system will need to use Visual Studio 2008 to open the
 extensions is possible.
 
 Note that by default, Visual Studio 2008 does not install 64bit compilers or
-tools.  You may need to reexecute the Visual Studio setup process and select
+tools.  You may need to re execute the Visual Studio setup process and select
 these tools (using Control Panel->[Add/Remove] Programs is a convenient way to
 check or modify your existing install.)
 
@@ -404,7 +404,7 @@ built-in functions in the installation script.
               file_created(path)
 
    These functions should be called when a directory or file is created by the
-   postinstall script at installation time.  It will register *path* with the
+   post install script at installation time.  It will register *path* with the
    uninstaller, so that it will be removed when the distribution is uninstalled.
    To be safe, directories are only removed if they are empty.
 

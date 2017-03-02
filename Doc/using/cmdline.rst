@@ -92,7 +92,7 @@ source.
 
       This option cannot be used with built-in modules and extension modules
       written in C, since they do not have Python module files. However, it
-      can still be used for precompiled modules, even if the original source
+      can still be used for pre-compiled modules, even if the original source
       file is not available.
 
    If this option is given, the first element of :data:`sys.argv` will be the
@@ -246,12 +246,12 @@ Miscellaneous options
 
 .. cmdoption:: -O
 
-   Turn on basic optimizations.  See also :envvar:`PYTHONOPTIMIZE`.
+   Turn on basic optimization.  See also :envvar:`PYTHONOPTIMIZE`.
 
 
 .. cmdoption:: -OO
 
-   Discard docstrings in addition to the :option:`-O` optimizations.
+   Discard docstrings in addition to the :option:`-O` optimization.
 
 
 .. cmdoption:: -q

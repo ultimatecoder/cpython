@@ -174,7 +174,7 @@ Following the Distutils' own manifest template, let's trace how the
 source distribution:
 
 #. include all Python source files in the :file:`distutils` and
-   :file:`distutils/command` subdirectories (because packages corresponding to
+   :file:`distutils/command` sub-directories (because packages corresponding to
    those two directories were mentioned in the ``packages`` option in the
    setup script---see section :ref:`setup-script`)
 

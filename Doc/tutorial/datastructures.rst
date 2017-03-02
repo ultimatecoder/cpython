@@ -67,7 +67,7 @@ objects:
    Raises a :exc:`ValueError` if there is no such item.
 
    The optional arguments *start* and *end* are interpreted as in the slice
-   notation and are used to limit the search to a particular subsequence of
+   notation and are used to limit the search to a particular sub-sequence of
    the list.  The returned index is computed relative to the beginning of the full
    sequence rather than the *start* argument.
 
@@ -192,7 +192,7 @@ List Comprehensions
 List comprehensions provide a concise way to create lists.
 Common applications are to make new lists where each element is the result of
 some operations applied to each member of another sequence or iterable, or to
-create a subsequence of those elements that satisfy a certain condition.
+create a sub-sequence of those elements that satisfy a certain condition.
 
 For example, assume we want to create a list of squares, like::
 

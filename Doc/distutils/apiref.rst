@@ -209,7 +209,7 @@ the full reference.
    |                        | on Unix C compiler command     |                           |
    |                        | line)                          |                           |
    +------------------------+--------------------------------+---------------------------+
-   | *undef_macros*         | list of macros to undefine     | a list of strings         |
+   | *undef_macros*         | list of macros to undefined     | a list of strings         |
    |                        | explicitly                     |                           |
    +------------------------+--------------------------------+---------------------------+
    | *library_dirs*         | list of directories to search  | a list of strings         |
@@ -322,7 +322,7 @@ This module provides the following functions.
    Generate C pre-processor options (:option:`!-D`, :option:`!-U`, :option:`!-I`) as
    used by at least two types of compilers: the typical Unix compiler and Visual
    C++. *macros* is the usual thing, a list of 1- or 2-tuples, where ``(name,)``
-   means undefine (:option:`!-U`) macro *name*, and ``(name, value)`` means define
+   means undefined (:option:`!-U`) macro *name*, and ``(name, value)`` means define
    (:option:`!-D`) macro *name* to *value*.  *include_dirs* is just a list of
    directory names to be added to the header file search path (:option:`!-I`).
    Returns a list of command-line options suitable for either Unix compilers or
@@ -1746,7 +1746,7 @@ Subclasses of :class:`Command` must define the following methods.
 
 .. method:: Command.run()
 
-   A command's raison d'etre: carry out the action it exists to perform, controlled
+   A command's raising d'etre: carry out the action it exists to perform, controlled
    by the options initialized in :meth:`initialize_options`, customized by other
    commands, the setup script, the command-line, and config files, and finalized in
    :meth:`finalize_options`.  All terminal output and filesystem interaction should

@@ -274,7 +274,7 @@ assigned to, so you can change the value of ``MyClass.i`` by assignment.
 the class: ``"A simple example class"``.
 
 Class *instantiation* uses function notation.  Just pretend that the class
-object is a parameterless function that returns a new instance of the class.
+object is a parameter-less function that returns a new instance of the class.
 For example (assuming the above class)::
 
    x = MyClass()

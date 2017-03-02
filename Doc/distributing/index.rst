@@ -23,7 +23,7 @@ installing other Python projects, refer to the
 .. note::
 
    For corporate and other institutional users, be aware that many
-   organisations have their own policies around using and contributing to
+   organizations have their own policies around using and contributing to
    open source software. Please take such policies into account when making
    use of the distribution and installation tools provided with Python.
 
@@ -82,7 +82,7 @@ reasonably straightforward for developers to make their own contributions
 back to that common pool of software if they choose to do so.
 
 The same distribution tools can also be used to distribute software within
-an organisation, regardless of whether that software is published as open
+an organization, regardless of whether that software is published as open
 source software or not.
 
 

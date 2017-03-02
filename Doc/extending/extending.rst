@@ -186,7 +186,7 @@ Finally, be careful to clean up garbage (by making :c:func:`Py_XDECREF` or
 :c:func:`Py_DECREF` calls for objects you have already created) when you return
 an error indicator!
 
-The choice of which exception to raise is entirely yours.  There are predeclared
+The choice of which exception to raise is entirely yours.  There are pre-declared
 C objects corresponding to all built-in Python exceptions, such as
 :c:data:`PyExc_ZeroDivisionError`, which you can use directly. Of course, you
 should choose exceptions wisely --- don't use :c:data:`PyExc_TypeError` to mean
@@ -898,7 +898,7 @@ Reference Counting in Python
 ----------------------------
 
 There are two macros, ``Py_INCREF(x)`` and ``Py_DECREF(x)``, which handle the
-incrementing and decrementing of the reference count. :c:func:`Py_DECREF` also
+increment and decrement of the reference count. :c:func:`Py_DECREF` also
 frees the object when the count reaches zero. For flexibility, it doesn't call
 :c:func:`free` directly --- rather, it makes a call through a function pointer in
 the object's :dfn:`type object`.  For this purpose (and others), every object

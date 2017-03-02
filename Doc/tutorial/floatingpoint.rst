@@ -75,7 +75,7 @@ of digits manageable by displaying a rounded value instead ::
    0.1
 
 Just remember, even though the printed result looks like the exact value
-of 1/10, the actual stored value is the nearest representable binary fraction.
+of 1/10, the actual stored value is the nearest re-presentable binary fraction.
 
 Interestingly, there are many different decimal numbers that share the same
 nearest approximate binary fraction.  For example, the numbers ``0.1`` and
@@ -217,7 +217,7 @@ decimal fractions cannot be represented exactly as binary (base 2) fractions.
 This is the chief reason why Python (or Perl, C, C++, Java, Fortran, and many
 others) often won't display the exact decimal number you expect.
 
-Why is that?  1/10 is not exactly representable as a binary fraction. Almost all
+Why is that?  1/10 is not exactly re-presentable as a binary fraction. Almost all
 machines today (November 2000) use IEEE-754 floating point arithmetic, and
 almost all platforms map Python floats to IEEE-754 "double precision".  754
 doubles contain 53 bits of precision, so on input the computer strives to

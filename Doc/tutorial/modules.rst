@@ -206,7 +206,7 @@ automatic process.  Also, the compiled modules are platform-independent, so the
 same library can be shared among systems with different architectures.
 
 Python does not check the cache in two circumstances.  First, it always
-recompiles and does not store the result for the module that's loaded directly
+re-compiles and does not store the result for the module that's loaded directly
 from the command line.  Second, it does not check the cache if there is no
 source module.  To support a non-source (compiled only) distribution, the
 compiled module must be in the source directory, and there must not be a source

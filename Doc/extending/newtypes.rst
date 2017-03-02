@@ -130,7 +130,7 @@ our objects and in some error messages, for example::
 Note that the name is a dotted name that includes both the module name and the
 name of the type within the module. The module in this case is :mod:`noddy` and
 the type is :class:`Noddy`, so we set the type name to :class:`noddy.Noddy`.
-One side effect of using an undotted name is that the pydoc documentation tool
+One side effect of using an un-dotted name is that the pydoc documentation tool
 will not list the new type in the module documentation. ::
 
    sizeof(noddy_NoddyObject),  /* tp_basicsize */
@@ -682,7 +682,7 @@ enables these slots:
 .. literalinclude:: ../includes/noddy4.c
 
 
-The traversal method provides access to subobjects that could participate in
+The traversal method provides access to sub-objects that could participate in
 cycles::
 
    static int
@@ -704,9 +704,9 @@ cycles::
        return 0;
    }
 
-For each subobject that can participate in cycles, we need to call the
+For each sub-object that can participate in cycles, we need to call the
 :c:func:`visit` function, which is passed to the traversal method. The
-:c:func:`visit` function takes as arguments the subobject and the extra argument
+:c:func:`visit` function takes as arguments the sub-object and the extra argument
 *arg* passed to the traversal method.  It returns an integer value that must be
 returned if it is non-zero.
 
@@ -727,8 +727,8 @@ functions.  With :c:func:`Py_VISIT`, :c:func:`Noddy_traverse` can be simplified:
    *visit* and *arg* in order to use :c:func:`Py_VISIT`.  This is to encourage
    uniformity across these boring implementations.
 
-We also need to provide a method for clearing any subobjects that can
-participate in cycles.  We implement the method and reimplement the deallocator
+We also need to provide a method for clearing any sub-objects that can
+participate in cycles.  We implement the method and re-implement the deallocator
 to use it::
 
    static int

@@ -254,7 +254,7 @@ choose "Uninstall/Change" to open the installer in maintenance mode.
 "Modify" allows you to add or remove features by modifying the checkboxes -
 unchanged checkboxes will not install or remove anything. Some options cannot be
 changed in this mode, such as the install directory; to modify these, you will
-need to remove and then reinstall Python completely.
+need to remove and then re-install Python completely.
 
 "Repair" will verify all the files that should be installed using the current
 settings and replace any that have been removed or modified.

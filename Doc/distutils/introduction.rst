@@ -150,7 +150,7 @@ operating from a common starting point, we offer the following glossary of
 common Python terms:
 
 module
-   the basic unit of code reusability in Python: a block of code imported by some
+   the basic unit of code re usability in Python: a block of code imported by some
    other code.  Three types of modules concern us here: pure Python modules,
    extension modules, and packages.
 
